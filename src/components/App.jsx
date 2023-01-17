@@ -61,7 +61,6 @@ contactDelete = contactId => {
           <Filter filter={filter} onChange={this.onChange} />
           <ContactList
             contacts={filterContact}
-            onClick={this.contactFilter}
             contactDelete={this.contactDelete}
           />
       </div>

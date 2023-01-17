@@ -17,8 +17,6 @@ export class ContactForm extends Component {
 
   onSubmit = e => {
     e.preventDefault();
-    const { name, value } = e.target;
-    this.setState({ [name]: value });
     this.props.contactAdd(this.state);
     this.reset();
   };
